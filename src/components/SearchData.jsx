@@ -27,7 +27,7 @@ useEffect(()=>{
     }
         
     getDataEngine()
-},[getDataEngine, dispatch])
+},[dispatch])
 
 
 
