@@ -15,7 +15,7 @@ function SearchData() {
     const dispatch=useDispatch()
 
      const getDataEngine=()=>{
-        axios.get("https://neha-json-server.herokuapp.com/engine").then(({data})=>{
+        axios.get("http://localhost:3001/engine").then(({data})=>{
             dispatch(getDataSuccess(data))
    
         })
