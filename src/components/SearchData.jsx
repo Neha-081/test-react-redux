@@ -14,20 +14,20 @@ function SearchData() {
         const [datas,setDatas]=useState()
     const dispatch=useDispatch()
 
-     const getDataEngine=()=>{
+   
+     
+     
+useEffect(()=>{
+    
+         const getDataEngine=()=>{
         axios.get("http://localhost:3001/engine").then(({data})=>{
             dispatch(getDataSuccess(data))
    
         })
     }
-     
-     
-useEffect(()=>{
-    
-       
         
     getDataEngine()
-},[getDataEngine])
+},[getDataEngine, dispatch])
 
 
 
