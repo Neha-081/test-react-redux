@@ -10,19 +10,23 @@ import { Link } from 'react-router-dom';
 function SearchData() {
 
     const {  data } = useSelector((store) => store.engine);
+    // eslint-disable-next-line no-unused-vars
         const [datas,setDatas]=useState()
     const dispatch=useDispatch()
 
 useEffect(()=>{
-    getDataEngine()
-},[])
-
-    const getDataEngine=()=>{
+    
+        const getDataEngine=()=>{
         axios.get("https://neha-json-server.herokuapp.com/engine").then(({data})=>{
             dispatch(getDataSuccess(data))
    
         })
     }
+        
+    getDataEngine()
+},[])
+
+
 
     const qualityAsc=()=>{
         
