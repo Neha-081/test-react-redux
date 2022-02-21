@@ -14,17 +14,20 @@ function SearchData() {
         const [datas,setDatas]=useState()
     const dispatch=useDispatch()
 
-useEffect(()=>{
-    
-        const getDataEngine=()=>{
+     const getDataEngine=()=>{
         axios.get("https://neha-json-server.herokuapp.com/engine").then(({data})=>{
             dispatch(getDataSuccess(data))
    
         })
     }
+     
+     
+useEffect(()=>{
+    
+       
         
     getDataEngine()
-},[])
+},[getDataEngine])
 
 
 
