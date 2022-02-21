@@ -31,7 +31,7 @@ function Search() {
     </ul>
     <form className="form-inline my-2 my-lg-0">
       <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value={keyword} onChange={()=>handleSearch(searched)}/>
-      <button className='search' className="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+      <button className="search btn btn-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
