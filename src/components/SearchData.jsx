@@ -20,7 +20,7 @@ function SearchData() {
 useEffect(()=>{
     
          const getDataEngine=()=>{
-        axios.get("http://localhost:3001/engine").then(({data})=>{
+        axios.get("https://neha-json-server.herokuapp.com/engine").then(({data})=>{
             dispatch(getDataSuccess(data))
    
         })
