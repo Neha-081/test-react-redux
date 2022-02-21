@@ -1,18 +1,22 @@
 import './App.css';
-import { Todos } from './components/Todo';
+
 import { Route,Routes } from 'react-router-dom';
-import TodoList from './components/TodoList';
-import Navbar from './components/Navbar';
+import Main from './components/Main';
+import SearchData from './components/SearchData';
+import SerachItem from './components/SerachItem';
+
 
 
 function App() {
 
 return <div className='App'>
-  <Navbar/>
+
   <Routes>
-    <Route exact path={'/'} element={<Todos/>}></Route>
-    {/* <Route exact path={'/products'} element={<ProductsList products={products} selectProduct={selectProduct} />}></Route> */}
-    <Route exact path="/todos/:todosid" element={<TodoList/>}></Route>
+    <Route exact path={'/'} element={<Main/>}></Route>
+    {/* <Route exact path={'/searchData'} element={<Search/>}></Route> */}
+     <Route path={'/searchData'}  element={<SearchData/>}></Route>
+     <Route path={'/engine/:engineid'}  element={<SerachItem/>}></Route>
+
   </Routes>
 </div>
 }

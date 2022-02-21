@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+}link{
+  text-decoration: none;
 }
 
 body{
@@ -7,31 +9,18 @@ body{
   margin-top: 0;
 }
 
-.App {
-  text-align: center;
-}
-.delete{
-  margin:20px;
-  margin-left: 30px;
-}
-.pageDiv{
-  margin-top: 50px;
-}.TodoName {
-  font-size: 20px;
-  font-weight: bold;
-}#listFlex{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 20px;
-  background-color: rgb(179, 185, 185);
-  margin-top: 15px;
-}#listFlex div:nth-child(1){
-  margin-top: 15px;
-}.title{
-  margin-right: 50px;
-}.inputTitle{
-  margin-bottom: 10px;
-}.spandlt{
-  margin-left: 100px;
+.logo{
+  height: 170px;
+  width: 350px;
+  margin: 20px;
+}.search-box{
+  width: 250px;
+}.logonav{
+  height: 50px;
+  width: 200px;
+}.resultbox{
+  background-color: rgb(252, 192, 234);
+padding: 20px;
+border-radius: 10px;
+margin: 20px;
 }
