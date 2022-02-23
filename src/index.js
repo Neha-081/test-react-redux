@@ -12,9 +12,9 @@ ReactDOM.render(
   <React.StrictMode>
     <ReduxProvider store={store}>
       <BrowserRouter>
-    <App />
-    </BrowserRouter>
-    </ReduxProvider>
+       <App />
+      </BrowserRouter>
+      </ReduxProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
