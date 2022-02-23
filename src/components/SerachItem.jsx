@@ -6,7 +6,6 @@ function SerachItem() {
 
   const {  data } = useSelector((store) => store.engine);
     const {engineid}=useParams()
-    
     const viewSingleData = data.filter((item) => Number(item.id) == Number(engineid));
 
   return (

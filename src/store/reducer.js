@@ -1,13 +1,14 @@
 import {
   GET_DATA,
-  GET_DATA_SUCCESS
- 
+  GET_DATA_SUCCESS,
+  GET_SINGLE_DATA_SUCCESS
 } from "./actionTypes.js";
 
 const init = {
   engine: {
     data: [],
-  }
+  },
+  filtered : {}
 };
 
 export const reducer = (store = init, { type, payload }) => {
@@ -28,7 +29,8 @@ export const reducer = (store = init, { type, payload }) => {
             data: payload,
           },
         };
-    
+
+      
     default:
       return { ...store };
   }

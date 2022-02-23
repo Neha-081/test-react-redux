@@ -1,5 +1,4 @@
-import { GET_DATA } from "./actionTypes.js"
-import { GET_DATA_SUCCESS } from "./actionTypes.js"
+import { GET_DATA, GET_DATA_SUCCESS, GET_SINGLE_DATA_SUCCESS } from "./actionTypes.js"
 
 
 export const getData=(payload)=>({
@@ -12,3 +11,8 @@ export const getDataSuccess=(payload)=>({
      payload
 })
 
+
+export const fetchSingleData = (payload) => ({
+     type : GET_SINGLE_DATA_SUCCESS,
+     payload
+});
